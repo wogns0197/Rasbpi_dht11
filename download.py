@@ -1,10 +1,10 @@
 import urllib.request
 
-url = "http://localhost:8888/House/data/humidity"
-name = "humidity.txt"
+url = "http://localhost:8888/House/data"
+name = "humidity"
 
 file = urllib.request.urlopen(url).read()
 
-with open(name, mode="wb") as f:
+with opeon(name, mode="wb") as f:
 	f.write(file)
 	print("!!")

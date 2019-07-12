@@ -20,12 +20,25 @@
    <p id="clock2" class="top_time"></p>
    </div>
    <div class="cont_left cont">   
- 
       <h1>P</h1>
       <p>온도</p>
-      <p>30 C°</p>
+      <p>
+        <!-- php파일 다운로드 -->
+
+        <?php
+          $content = file_get_contents('http://192.168.0.100/data/temperature');
+          echo $content;
+        ?>
+        C°          
+      </p>
       <p>습도</p>
-      <p>60  %</p>
+      <p>
+        <?php
+          $content1 = file_get_contents('http://192.168.0.100/data/humidity');
+          echo $content1;
+        ?>
+        %
+      </p>
    </div>
     
    <div class="cont_right cont" onclick="but();" >
