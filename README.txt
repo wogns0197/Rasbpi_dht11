@@ -2,9 +2,7 @@
 
 라즈베리 파이에서 dht11 pyhton으로 작동
 온도,습도 데이터는 라즈베리 아파치(rasbp:localhost/data)에 
-클라이언트는 라즈베리 아파치로 접속
-라즈베리 아파치 서버에 있는 temperature, humidity 데이터 다운로드
-클라이언트 php 에서 작동
+클라이언트 php 에서는 라즈베리 아파치 서버에 있는 temperature, humidity 데이터 다운로드
 
 !!!!!
 온습도 데이터 가져오는것 까지 성공 BUT! ajax or json 등 이용하여 실시간으로 온습도 데이터 업데이트해줘야함
